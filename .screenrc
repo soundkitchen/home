@@ -1,0 +1,19 @@
+#
+#   Setting for screen.
+#
+
+#   Basic Settings.
+startup_message off
+escape          ^z^z
+msgwait         2
+vbell           off
+defscrollback   10000
+termcapinfo     xterm* ti@:te@
+#
+
+#   Key Bindings.
+bind    t title
+#
+
+#   Others.
+hardstatus alwayslastline "%{= w}%-w%{= rw}[%n %t]%{= dw}%+w"

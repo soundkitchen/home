@@ -1,0 +1,15 @@
+[user]
+	name = Takanobu Izukawa
+	email = t.izukawa@gmail.com
+
+[color]
+	status = auto
+	log = auto
+
+[alias]
+	st = status
+	ci = commit
+	ls = ls-files
+
+[merge]
+	tool = diff3
