@@ -1,2 +1,3 @@
-.osx_profile
-.osx_bashrc
+*.swp
+*~
+.DS_Store
