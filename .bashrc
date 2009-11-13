@@ -28,7 +28,7 @@ fi
 # set a fancy prompt (non-color, unless we know we "want" color)
 case "$TERM" in
 xterm-color|xterm|linux|screen)
-    PS1='${debian_chroot:+($debian_chroot)}\u@\[\033[31m\]\h\[\033[00m\]:\[\033[01;35m\]\w\[\033[00m\]\$ '
+    PS1='${debian_chroot:+($debian_chroot)}\u@\[\033[36m\]\h\[\033[00m\]:\[\033[01;35m\]\w\[\033[00m\]\$ '
     ;;
 *)
     PS1='${debian_chroot:+($debian_chroot)}\u@\h:\w\$ '

@@ -16,4 +16,4 @@ bind    t title
 #
 
 #   Others.
-hardstatus alwayslastline "%{= w}%-w%{= rw}[%n %t]%{= dw}%+w"
+hardstatus alwayslastline "%{= w}%-w%{= bw}[%n %t]%{= dw}%+w"
