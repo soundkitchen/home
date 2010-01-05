@@ -1,30 +1,21 @@
-#
-#   .bash_profile for OSX
-#
+# ~/.profile: executed by the command interpreter for login shells.
+# This file is not read by bash(1), if ~/.bash_profile or ~/.bash_login
+# exists.
+# see /usr/share/doc/bash/examples/startup-files for examples.
+# the files are located in the bash-doc package.
 
-if [ -f "${HOME}/.bashrc" ]; then
-    . "${HOME}/.bashrc"
-fi
+# the default umask is set in /etc/profile
+#umask 022
 
-if [ -d "${HOME}/Flex3SDK" ]; then
-    if [ -d "${HOME}/Flex3SDK/bin" ]; then
-        PATH="${HOME}/Flex3SDK/bin:${PATH}"
+# if running bash
+if [ -n "$BASH_VERSION" ]; then
+    # include .bashrc if it exists
+    if [ -f "$HOME/.bashrc" ]; then
+	. "$HOME/.bashrc"
     fi
 fi
 
-if [ -d "/opt/local" ]; then
-    if [ -d "/opt/local/bin" ]; then
-        PATH="/opt/local/bin:${PATH}"
-    fi
-    if [ -d "/opt/local/sbin" ]; then
-        PATH="/opt/local/sbin:${PATH}"
-    fi
-fi
-
-if [ -d "/usr/local/git" ]; then
-    PATH="/usr/local/git/bin:${PATH}"
-fi
-
-if [ -d "${HOME}/bin" ]; then
-    PATH="${HOME}/bin:${PATH}"
+# set PATH so it includes user's private bin if it exists
+if [ -d "$HOME/bin" ] ; then
+    PATH="$HOME/bin:$PATH"
 fi
