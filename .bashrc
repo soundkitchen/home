@@ -14,6 +14,10 @@ if [ -f ~/.git_bash_completion ]; then
     . ~/.git_bash_completion
 fi
 
+if [ -f ~/.django_bash_completion ]; then
+    . ~/.django_bash_completion
+fi
+
 alias ls='ls -vGF'
 #alias edit='gvim'
 export EDITOR='vim'
