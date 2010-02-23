@@ -21,7 +21,7 @@ endif
 
 " based on "JavaScript" VIM syntax by Claudio Fleiner <claudio@fleiner.com>
 
-syn case ignore
+"syn case ignore
 syn match   actionScriptLineComment			"\/\/.*$"
 syn match   actionScriptCommentSkip			"^[ \t]*\*\($\|[ \t]\+\)"
 syn region  actionScriptCommentString			start=+"+  skip=+\\\\\|\\"+  end=+"+ end=+\*/+me=s-1,he=s-1 contains=actionScriptSpecial,actionScriptCommentSkip,@htmlPreproc
