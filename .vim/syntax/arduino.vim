@@ -24,23 +24,23 @@ endif
 syn keyword arduinoConstant HIGH LOW INPUT OUTPUT
 syn keyword arduinoConstant DEC BIN HEX OCT BYTE
 syn keyword arduinoConstant PI HALF_PI TWO_PI
-syn keyword arduinoConstant LSBFIRST MSBFIRST 
-syn keyword arduinoConstant CHANGE FALLING RISING 
+syn keyword arduinoConstant LSBFIRST MSBFIRST
+syn keyword arduinoConstant CHANGE FALLING RISING
 syn keyword arduinoConstant SERIAL DISPLAY
 syn keyword arduinoConstant DEFAULT EXTERNAL INTERAL
 
 syn keyword arduinoStdFunc abs acos asin atan atan2 ceil constrain
 syn keyword arduinoStdFunc cos degrees exp floor log
-syn keyword arduinoStdFunc map max min radians 
+syn keyword arduinoStdFunc map max min radians
 syn keyword arduinoStdFunc round sin sq sqrt tan
 syn keyword arduinoStdFunc randomSeed random
 
-syn keyword arduinoFunc analogReference analogRead analogWrite 
-syn keyword arduinoFunc attachInterrupt detachInterrupt interrupts noInterrupts 
+syn keyword arduinoFunc analogReference analogRead analogWrite
+syn keyword arduinoFunc attachInterrupt detachInterrupt interrupts noInterrupts
 syn keyword arduinoFunc lowByte highByte bitRead bitWrite bitSet bitClear
-syn keyword arduinoFunc millis micros delay delayMicroseconds 
-syn keyword arduinoFunc pinMode digitalWrite digitalRead 
-syn keyword arduinoFunc tone noTone pulseIn shiftOut 
+syn keyword arduinoFunc millis micros delay delayMicroseconds
+syn keyword arduinoFunc pinMode digitalWrite digitalRead
+syn keyword arduinoFunc tone noTone pulseIn shiftOut
 
 syn keyword arduinoMethod setup loop
 syn keyword arduinoMethod begin end available read flush print println write
@@ -52,3 +52,4 @@ hi def link arduinoStdFunc Function
 hi def link arduinoFunc Function
 hi def link arduinoMethod Function
 hi def link arduinoModule Identifier
+
