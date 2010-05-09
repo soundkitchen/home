@@ -6,9 +6,9 @@ if [ -f "${HOME}/.bashrc" ]; then
     . "${HOME}/.bashrc"
 fi
 
-if [ -d "${HOME}/Flex3SDK" ]; then
-    if [ -d "${HOME}/Flex3SDK/bin" ]; then
-        PATH="${HOME}/Flex3SDK/bin:${PATH}"
+if [ -d "${HOME}/FlexSDK" ]; then
+    if [ -d "${HOME}/FlexSDK/bin" ]; then
+        PATH="${HOME}/FlexSDK/bin:${PATH}"
     fi
 fi
 
