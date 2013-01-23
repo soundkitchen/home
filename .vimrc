@@ -8,8 +8,8 @@ set modeline
 "set encoding=utf-8
 set fileencodings=utf-8,euc-jp,sjis,iso-2022-jp
 set expandtab
-set tabstop=4
-set shiftwidth=4
+set tabstop=2
+set shiftwidth=2
 set softtabstop=0
 "set number
 set autoindent
