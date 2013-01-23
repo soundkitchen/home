@@ -51,7 +51,8 @@ au BufNewFile,BufRead *.mxml :set filetype=xml
 au BufNewFile,BufRead *.as :set filetype=actionscript bomb
 au BufNewFile,BufRead *.hx :set filetype=haxe
 au BufNewFile,BufRead *.pde :set filetype=arduino
-au BufRead,BufNewFile *.scss :set filetype=scss
+au BufNewFile,BufRead *.scss :set filetype=scss
+au BufNewFile,BufRead *.coffee :set filetype=coffee
 
 "   SnippetsEmu.
 "let g:snippetsEmu_key = "<C-B>"
