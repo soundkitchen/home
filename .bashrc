@@ -18,6 +18,9 @@ if [ -f ~/.django_bash_completion ]; then
     . ~/.django_bash_completion
 fi
 
+export PATH="$HOME/.nodebrew/current/bin:$PATH"
+export LANG='en_US.UTF-8'
+
 alias ls='ls -vGF'
 #alias edit='gvim'
 export EDITOR='vim'
