@@ -8,8 +8,8 @@ set modeline
 "set encoding=utf-8
 set fileencodings=utf-8,euc-jp,sjis,iso-2022-jp
 set expandtab
-set tabstop=4
-set shiftwidth=4
+set tabstop=2
+set shiftwidth=2
 set softtabstop=0
 "set number
 set autoindent
@@ -51,8 +51,8 @@ au BufNewFile,BufRead *.mxml :set filetype=xml
 au BufNewFile,BufRead *.as :set filetype=actionscript bomb
 au BufNewFile,BufRead *.hx :set filetype=haxe
 au BufNewFile,BufRead *.pde :set filetype=arduino
-au BufRead,BufNewFile *.scss :set filetype=scss
-au BufRead,BufNewFile *.coffee :set filetype=coffee
+au BufNewFile,BufRead *.scss :set filetype=scss
+au BufNewFile,BufRead *.coffee :set filetype=coffee
 
 "   SnippetsEmu.
 "let g:snippetsEmu_key = "<C-B>"
