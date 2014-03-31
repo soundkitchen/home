@@ -2,7 +2,8 @@
 " .vimrc
 "
 
-"   Basic settings.
+
+" Basic settings.
 set nocompatible
 set modeline
 "set encoding=utf-8
@@ -22,14 +23,31 @@ set wildmode=list:longest
 set hlsearch
 "set statusline=%<%f\ %m%r%h%w%{'['.(&fenc!=''?&fenc:&enc).']['.&ff.']'}%=%l,%c%V%8P
 
-filetype plugin on
+filetype plugin indent on
 
-" map.
-"inoremap { {}<LEFT>
-"inoremap [ []<LEFT>
-"inoremap ( ()<LEFT>
-"inoremap " ""<LEFT>
-"inoremap ' ''<LEFT>
+
+" for neobundle.
+if has('vim_starting')
+  set runtimepath+=~/.vim/bundle/neobundle.vim/
+endif
+
+call neobundle#rc(expand('~/.vim/bundle/'))
+NeoBundleFetch 'Shougo/neobundle.vim'
+
+" My Bundles here:
+" You can specify revision/branch/tag.
+"NeoBundle 'Shougo/neosnippet.vim'
+"NeoBundle 'Shougo/vimshell', { 'rev' : '3787e5' }
+
+NeoBundle 'jnwhiteh/vim-golang'
+NeoBundle 'kchmck/vim-coffee-script'
+NeoBundle 'evanmiller/nginx-vim-syntax'
+"NeoBundle 'cakebaker/scss-syntax.vim'
+NeoBundle 'tpope/vim-surround'
+NeoBundle 'editorconfig/editorconfig-vim'
+
+NeoBundleCheck
+
 
 " Color scheme.
 syntax enable
@@ -44,21 +62,11 @@ hi Search ctermfg=White ctermbg=Blue guifg=White guibg=Blue cterm=underline gui=
 hi WhitespaceEOL ctermbg=Yellow
 match WhitespaceEOL /\s\+$/
 
+
 "   Other cmds.
 au BufEnter * execute ":lcd " . expand("%:p:h")
 au BufNewFile,BufRead *.mxi :set filetype=xml
 au BufNewFile,BufRead *.mxml :set filetype=xml
 au BufNewFile,BufRead *.as :set filetype=actionscript bomb
-au BufNewFile,BufRead *.hx :set filetype=haxe
-au BufNewFile,BufRead *.pde :set filetype=arduino
 au BufNewFile,BufRead *.scss :set filetype=scss
 au BufNewFile,BufRead *.coffee :set filetype=coffee
-
-"   SnippetsEmu.
-"let g:snippetsEmu_key = "<C-B>"
-
-"   snipMate
-let g:SuperTabMappingForward = "<C-B>"
-let g:SuperTabMappingBackward = "<C-B>"
-ino <silent> <C-B> <c-r>=TriggerSnippet()<cr>
-snor <silent> <C-B> <esc>i<right><c-r>=TriggerSnippet()<cr>
