@@ -28,3 +28,9 @@ fi
 if [ -d "${HOME}/bin" ]; then
     PATH="${HOME}/bin:${PATH}"
 fi
+
+if [ ! -z `which hub` ]; then
+  alias git=hub
+fi
+
+export LANG=en_US.UTF-8
