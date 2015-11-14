@@ -4,7 +4,8 @@
 
 #   Basic Settings.
 startup_message off
-escape          ^z^z
+#escape          ^z^z
+escape          ^Tt
 msgwait         2
 vbell           off
 defscrollback   10000

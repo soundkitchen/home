@@ -6,6 +6,7 @@
 " Basic settings.
 set nocompatible
 set modeline
+set modelines=5
 "set encoding=utf-8
 set fileencodings=utf-8,euc-jp,sjis,iso-2022-jp
 set expandtab
@@ -45,6 +46,9 @@ NeoBundle 'evanmiller/nginx-vim-syntax'
 "NeoBundle 'cakebaker/scss-syntax.vim'
 NeoBundle 'tpope/vim-surround'
 NeoBundle 'editorconfig/editorconfig-vim'
+NeoBundle 'jeroenbourgois/vim-actionscript'
+NeoBundle 'vim-erlang/vim-erlang-runtime'
+NeoBundle 'elixir-lang/vim-elixir'
 
 NeoBundleCheck
 
