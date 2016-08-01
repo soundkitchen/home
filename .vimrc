@@ -40,13 +40,13 @@ NeoBundleFetch 'Shougo/neobundle.vim'
 "NeoBundle 'Shougo/neosnippet.vim'
 "NeoBundle 'Shougo/vimshell', { 'rev' : '3787e5' }
 
-NeoBundle 'jnwhiteh/vim-golang'
+NeoBundle 'fatih/vim-go'
 NeoBundle 'kchmck/vim-coffee-script'
 NeoBundle 'evanmiller/nginx-vim-syntax'
 "NeoBundle 'cakebaker/scss-syntax.vim'
-NeoBundle 'tpope/vim-surround'
-NeoBundle 'editorconfig/editorconfig-vim'
-NeoBundle 'jeroenbourgois/vim-actionscript'
+"NeoBundle 'tpope/vim-surround'
+"NeoBundle 'editorconfig/editorconfig-vim'
+"NeoBundle 'jeroenbourgois/vim-actionscript'
 NeoBundle 'vim-erlang/vim-erlang-runtime'
 NeoBundle 'elixir-lang/vim-elixir'
 
@@ -55,9 +55,9 @@ NeoBundleCheck
 
 " Color scheme.
 syntax enable
-hi Comment ctermfg=Red cterm=NONE
-hi LineNr ctermfg=Cyan cterm=NONE
-hi StatusLine ctermfg=Black ctermbg=White cterm=NONE
+hi Comment ctermfg=Red
+hi LineNr ctermfg=Cyan
+hi StatusLine ctermfg=Black ctermbg=White
 hi StatusLineNC ctermfg=Black ctermbg=White
 hi VertSplit ctermfg=Black ctermbg=Green
 hi Directory ctermfg=Cyan cterm=underline
@@ -69,8 +69,8 @@ match WhitespaceEOL /\s\+$/
 
 "   Other cmds.
 au BufEnter * execute ":lcd " . expand("%:p:h")
-au BufNewFile,BufRead *.mxi :set filetype=xml
-au BufNewFile,BufRead *.mxml :set filetype=xml
-au BufNewFile,BufRead *.as :set filetype=actionscript bomb
-au BufNewFile,BufRead *.scss :set filetype=scss
+"au BufNewFile,BufRead *.mxi :set filetype=xml
+"au BufNewFile,BufRead *.mxml :set filetype=xml
+"au BufNewFile,BufRead *.as :set filetype=actionscript bomb
+"au BufNewFile,BufRead *.scss :set filetype=scss
 au BufNewFile,BufRead *.coffee :set filetype=coffee
