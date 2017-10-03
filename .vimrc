@@ -27,30 +27,30 @@ set hlsearch
 filetype plugin indent on
 
 
-" for neobundle.
-if has('vim_starting')
-  set runtimepath+=~/.vim/bundle/neobundle.vim/
-endif
-
-call neobundle#rc(expand('~/.vim/bundle/'))
-NeoBundleFetch 'Shougo/neobundle.vim'
-
-" My Bundles here:
-" You can specify revision/branch/tag.
-"NeoBundle 'Shougo/neosnippet.vim'
-"NeoBundle 'Shougo/vimshell', { 'rev' : '3787e5' }
-
-NeoBundle 'fatih/vim-go'
-NeoBundle 'kchmck/vim-coffee-script'
-NeoBundle 'evanmiller/nginx-vim-syntax'
-"NeoBundle 'cakebaker/scss-syntax.vim'
-"NeoBundle 'tpope/vim-surround'
-"NeoBundle 'editorconfig/editorconfig-vim'
-"NeoBundle 'jeroenbourgois/vim-actionscript'
-NeoBundle 'vim-erlang/vim-erlang-runtime'
-NeoBundle 'elixir-lang/vim-elixir'
-
-NeoBundleCheck
+"" for neobundle.
+"if has('vim_starting')
+"  set runtimepath+=~/.vim/bundle/neobundle.vim/
+"endif
+"
+"call neobundle#rc(expand('~/.vim/bundle/'))
+"NeoBundleFetch 'Shougo/neobundle.vim'
+"
+"" My Bundles here:
+"" You can specify revision/branch/tag.
+""NeoBundle 'Shougo/neosnippet.vim'
+""NeoBundle 'Shougo/vimshell', { 'rev' : '3787e5' }
+"
+"NeoBundle 'fatih/vim-go'
+"NeoBundle 'kchmck/vim-coffee-script'
+"NeoBundle 'evanmiller/nginx-vim-syntax'
+""NeoBundle 'cakebaker/scss-syntax.vim'
+""NeoBundle 'tpope/vim-surround'
+""NeoBundle 'editorconfig/editorconfig-vim'
+""NeoBundle 'jeroenbourgois/vim-actionscript'
+"NeoBundle 'vim-erlang/vim-erlang-runtime'
+"NeoBundle 'elixir-lang/vim-elixir'
+"
+"NeoBundleCheck
 
 
 " Color scheme.
