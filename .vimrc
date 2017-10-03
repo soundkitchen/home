@@ -25,15 +25,15 @@ set hlsearch
 "dein Scripts-----------------------------
 
 " Required:
-set runtimepath+=/home/ubuntu/.files/.vim/dein/repos/github.com/Shougo/dein.vim
+set runtimepath+=~/.vim/dein/repos/github.com/Shougo/dein.vim
 
 " Required:
-if dein#load_state('/home/ubuntu/.files/.vim/dein')
-  call dein#begin('/home/ubuntu/.files/.vim/dein')
+if dein#load_state('~/.vim/dein')
+  call dein#begin('~/.vim/dein')
 
   " Let dein manage dein
   " Required:
-  call dein#add('/home/ubuntu/.files/.vim/dein/repos/github.com/Shougo/dein.vim')
+  call dein#add('~/.vim/dein/repos/github.com/Shougo/dein.vim')
 
   " Add or remove your plugins here:
   call dein#add('chr4/nginx.vim')
