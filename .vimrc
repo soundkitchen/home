@@ -19,6 +19,7 @@ set showcmd
 set backspace=indent,eol,start
 set wildmode=list:longest
 set hlsearch
+set background=dark
 "set statusline=%<%f\ %m%r%h%w%{'['.(&fenc!=''?&fenc:&enc).']['.&ff.']'}%=%l,%c%V%8P
 
 
@@ -41,6 +42,7 @@ if dein#load_state('~/.vim/dein')
   call dein#add('vim-erlang/vim-erlang-runtime')
   call dein#add('elixir-editors/vim-elixir')
   call dein#add('fatih/vim-go')
+  call dein#add('posva/vim-vue')
 
   " You can specify revision/branch/tag.
   call dein#add('Shougo/vimshell', { 'rev': '3787e5' })
@@ -78,3 +80,4 @@ match WhitespaceEOL /\s\+$/
 "   Other cmds.
 au BufEnter * execute ":lcd " . expand("%:p:h")
 au BufNewFile,BufRead *.coffee :set filetype=coffee
+au BufNewFile,BufRead *.php :set tabstop=4 shiftwidth=4 expandtab
