@@ -19,6 +19,7 @@ set showcmd
 set backspace=indent,eol,start
 set wildmode=list:longest
 set hlsearch
+set background=dark
 "set statusline=%<%f\ %m%r%h%w%{'['.(&fenc!=''?&fenc:&enc).']['.&ff.']'}%=%l,%c%V%8P
 
 
