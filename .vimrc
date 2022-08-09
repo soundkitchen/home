@@ -9,8 +9,8 @@ set modeline
 set modelines=5
 set fileencodings=utf-8,euc-jp,sjis,iso-2022-jp
 set expandtab
-set tabstop=2
-set shiftwidth=2
+set tabstop=4
+set shiftwidth=4
 set softtabstop=0
 set autoindent
 set directory=~/.vim/swap
@@ -28,29 +28,18 @@ set background=dark
 " Required:
 set runtimepath+=~/.vim/dein/repos/github.com/Shougo/dein.vim
 
-" Required:
-if dein#load_state('~/.vim/dein')
-  call dein#begin('~/.vim/dein')
+call dein#begin('~/.vim/dein')
+call dein#add('~/.vim/dein/repos/github.com/Shougo/dein.vim')
 
-  " Let dein manage dein
-  " Required:
-  call dein#add('~/.vim/dein/repos/github.com/Shougo/dein.vim')
+call dein#add('chr4/nginx.vim')
+call dein#add('digitaltoad/vim-pug')
+call dein#add('hashivim/vim-terraform')
+call dein#add('kchmck/vim-coffee-script')
+call dein#add('mattn/vim-goimports')
+call dein#add('posva/vim-vue')
+call dein#add('vim-erlang/vim-erlang-runtime')
 
-  " Add or remove your plugins here:
-  call dein#add('chr4/nginx.vim')
-  call dein#add('kchmck/vim-coffee-script')
-  call dein#add('vim-erlang/vim-erlang-runtime')
-  call dein#add('elixir-editors/vim-elixir')
-  call dein#add('fatih/vim-go')
-  call dein#add('posva/vim-vue')
-
-  " You can specify revision/branch/tag.
-  call dein#add('Shougo/vimshell', { 'rev': '3787e5' })
-
-  " Required:
-  call dein#end()
-  call dein#save_state()
-endif
+call dein#end()
 
 " Required:
 filetype plugin indent on
@@ -80,4 +69,4 @@ match WhitespaceEOL /\s\+$/
 "   Other cmds.
 au BufEnter * execute ":lcd " . expand("%:p:h")
 au BufNewFile,BufRead *.coffee :set filetype=coffee
-au BufNewFile,BufRead *.php :set tabstop=4 shiftwidth=4 expandtab
+au BufNewFile,BufRead *.php :set expandtab
