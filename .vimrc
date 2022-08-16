@@ -70,3 +70,9 @@ match WhitespaceEOL /\s\+$/
 au BufEnter * execute ":lcd " . expand("%:p:h")
 au BufNewFile,BufRead *.coffee :set filetype=coffee
 au BufNewFile,BufRead *.php :set expandtab
+
+
+" vim-terraform settings.
+let g:terraform_align=1
+let g:terraform_fold_sections=0
+let g:terraform_fmt_on_save=1
