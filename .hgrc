@@ -1,8 +1,0 @@
-[ui]
-username = Takanobu Izukawa <t.izukawa@gmail.com>
-#merge = vimdiff
-merge = diff3
-
-[merge-tools]
-#vimdiff.args = $local $base $other
-diff3.args = -L local -L base -L other -m $local $base $other > $output
