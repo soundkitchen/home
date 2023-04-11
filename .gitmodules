@@ -1,6 +1,0 @@
-[submodule ".vim/dein/repos/github.com/Shougo/dein.vim"]
-	path = .vim/dein/repos/github.com/Shougo/dein.vim
-	url = https://github.com/Shougo/dein.vim.git
-[submodule ".vim/pack/jetpack/opt/vim-jetpack"]
-	path = .vim/pack/jetpack/opt/vim-jetpack
-	url = https://github.com/tani/vim-jetpack.git
