@@ -13,3 +13,7 @@
 
 [merge]
 	tool = diff3
+[init]
+	defaultBranch = main
+[pull]
+	rebase = false
